@@ -1,12 +1,14 @@
-**====================*
-** Paper_1 研究
-** 主程序
-**====================*
+**************************************************************
+* name:_master.do
+* author:zhengqing zhou (Peking University)
+* description:estimates the causal effect of prison capacity 
+*             expansion on incarceration rates using synth
+* date:2022-05-10
+**************************************************************
 
 /* 这里与人大王非老师的顺序有点不同
     他在合并数据后：完善变量标签、单变量清洗、多变量清洗、定义研究样本、变量调整 
     我是在合并数据后：（没有完善变量标签，因为大部分是已存在）、单变量清洗（特殊值转缺失值）、（定义研究样本放在之后）、变量调整
-
 ssc install outreg2, replace
 ssc install estout, replace
 ssc install outsum, replace
