@@ -370,4 +370,31 @@ Bacon decomposition
 - https://asjadnaqvi.github.io/DiD/docs/code/06_bacon/
 - https://www.lianxh.cn/news/122dffa5b6d39.html
 
-## MHE P 54+
+## MHE P 54+ 暂放
+
+# Log：2022-05-13
+
+- MHE
+- DID 网站
+
+## 任务清单
+
+### 优先必须完成
+
+— from code to data
+  - Data 构建：面板数据如何从数据库构建！哪些学者？如何做的？ → 有模仿文章或者操作指南
+    - 目标文章 → 复制结果
+    - Cunningham + #codechella + [DID stuff](https://asjadnaqvi.github.io/DiD/)
+        - cd /Users/zhouzhengqing/Desktop/SportsEconAnalysis/++SC/Slides
+        - open *02
+
+- 套路
+  - 陈硕：一刀切 DID、渐进 DID
+  - Marc F. Bellemare：
+
+### 可以暂放
+
+- 《置身事内》继续
+
+- from econ to sportecon
+  - Nicolas Watanabe
