@@ -374,9 +374,6 @@ Bacon decomposition
 
 # Log：2022-05-13
 
-- MHE
-- DID 网站
-
 ## 任务清单
 
 ### 优先必须完成
@@ -392,9 +389,50 @@ Bacon decomposition
   - 陈硕：一刀切 DID、渐进 DID
   - Marc F. Bellemare：
 
+### 提前插队
+
+- SEA 备课
+
 ### 可以暂放
 
 - 《置身事内》继续
 
 - from econ to sportecon
   - Nicolas Watanabe
+
+## Note
+
+### code + data
+
+```参见 baker.do```
+- baker 构建的 panel data：1000 个 unit（公司），分布在 40 个州，每个州 25 个 + 有四个政策组（经历不同时期的冲击）+ 最长时间跨度为 30 年
+  - step1：create the states，40
+  - step2：create firms → each state 生成 25 个公司 = 40*25
+  - step3：create the years → each firm 有 30y，
+  - step4：create id, egen id =group(state firms)
+- 生成 cohort，每期多增加 250 个被干预的公司，the treatment effect still 7 on average
+  - step1：create cohort → 按照 state 分成 4 个 cohort（其实就是 group），每个 cohort 的政策干预开始时间不同
+    - 把 40 个州分成 4 个 cohort
+    - 每个 cohort 会对应一个政策开始的年份
+    - 用（0,1）在每个 cohort 中将政策从具体哪一年开始执行标识出来，标识出来后到代表**永久性的进入干预状态** → 这里的假设是"没有政策失效"
+  - step2：create policy → 政策强度，对每个 cohort 是不同，时间开始越往后的 cohort 的强度越小
+    - 分类：Basic DD + Staggered DD
+      - Basic DD （不存在政策执行跨期 cohort)
+        - 情形 1. constant T effect（政策效力跨期相同）
+        - 情形 2. dynamic T effects（政策效力跨期不同，在 TWFE 中加入每期的时间的 dummy)
+      - Staggered T DD （存在政策执行跨期 cohort)
+        - 情形 1. 个体间相同的 constant T effects（政策效力跨期相同）: 若满足 trends 假设，VWCT=0 且 DeltaATT=0, 所有 TWFE 一致就是 VWATT（方差加权的任意 2*2ATT，这个 ATT 是政策效力跨期相同的）
+        - 情形 2. 个体间相同的 dynamic T effects（政策效力跨期不同方式 1)：即使满足 trends 假设，VWCT=0 ，DeltaATT $≠$ 0 ,TWFE 有偏（该偏误仅存在于单一系数设定；在事件研究的设定，可以用 TWFE；在事件研究中，没有 NeverT 的话，也会 TWFE 也会有偏） → 一般也就从 TWFE 转型 StaggerDD 的方法了
+        - 情形 3. 个体间不同的 dynamic T effects（政策效力跨期不同方式 2)：即使满足 trends 假设，VWCT=0 ，DeltaATT $≠$ 0 ,TWFE 有偏（足够坏会改变符号） → 就只能从 TWFE 转型 StaggerDD 的方法了
+    - Baker 的假设是：每个 cohort 有不同强度的冲击，政策开始越晚的，政策强度越小 → **在 cohort 内是静态的政策冲击，cohort 间是异质性**
+    - 对 Baker 的扩展：对于同一 cohort 内 (cohort 间是异质性），政策冲击是累积的，累积时间越久，政策效力越大 (cumulative treatment effect) → **Dynamic treatment effects over time for each group**
+    - 这里 baker.do 给定的 STDD 的情形 1
+    ```
+    DGP: heterogeneous versus constant (but always across group heterogeneity)
+    Cumulative treatment effect is te x (year - t_g + 1) -- Dynamic treatment effects over time for each group.
+    How does (year - treat_date + 1) create dynamic ATT?  Assume treat_date is 1992 and it is year 2000.
+    Then, te=8 x (2000 - 1992 + 1) = 8 x (9) = 72. Group 2's TE rises from an 8 up to 72 in the t+8 year.
+    ```
+  - step3：STDD情形1的Y的DGP,STDD情形2的Y的DGP
+    - 
+### topic + questions + paper_cited
