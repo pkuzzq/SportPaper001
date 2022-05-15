@@ -372,7 +372,7 @@ Bacon decomposition
 
 ## MHE P 54+ 暂放
 
-# Log：2022-05-13 + 2022-05-14
+# Log：2022-05-13 + 2022-05-14 +2022-05-15
 
 ## 任务清单
 
@@ -402,7 +402,7 @@ Bacon decomposition
 
 ## Note
 
-### code + data
+### TWFW &DD: code + data
 
 - 从TWFE → DD
 - 简要回顾下TWFE估计值 
@@ -419,6 +419,8 @@ Bacon decomposition
       - 解决这个问题方法是加入**时变控制**，但这会限制DGP，Sant’Anna and Zhou（2020）中说明了原因
       - Abadie（2005）建议使用时间序列logit或线性概率模型估计的倾向得分对均值差分进行加权
     - DD中是在模型中加入时间的
+
+![cc4tM9](https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/cc4tM9.png)
 
 - "三步法"估计DD → 具有异质性的ATT估计量，但是跨期相同，且适用于2*2案例
   - step1:计算每个单位的"post - pre"，即DD部分
@@ -459,5 +461,25 @@ Bacon decomposition
     Then, te=8 x (2000 - 1992 + 1) = 8 x (9) = 72. Group 2's TE rises from an 8 up to 72 in the t+8 year.
     ```
   - step3：STDD情形1的Y的DGP,STDD情形2的Y的DGP
-    - 
+
+- 从TWFE → eventstudy & DD
+  - TWFE：{individual level fixed effects(firm/person) + unit level fixed effects(state/province) + common timing trends(time dummy)}{unobserved} + {X_it(time_variant coviarates: edu_it) + Z_i(time_invariant coviarates: gender)}{observed}
+  - cohort level ATT(unit with same year treated) → 这就是eventstudy的灵感来源 → 它是dynamic的 → 对应于Staggered T DD情形(3)，S&A(2020)解决了它，CS(2020)同样解决了它 
+    - stata: id =group(state firms) → 将LSDV中的 i.id 意味着同时包含了 individual level & unit level 
+    - cohort 是将unit按照不同的干预发生时间进一步分开。 treat_date = year_treated + unit 中的部分)
+- eventstudy = TWFE(baseline model中有common time trends) + Leads&Lags
+  - Leads&Lags base on the time → 将time按照分化成leads period indicator + lags period indicator
+  - 其实是TWFE under differential timing
+  - 建立一个bin dummy，将Leads&Lags中重新"block" 
+  - 通过block，实现对cohort-specific ATT
+  - SA将其分为
+    - static specification
+    - dynamic specificaiton
+  - 由于多重共线性:一般会把-1drop，-4drop
+
+- 共性问题是DD&TWFE
+  - 假设1:parallel trend
+  - 假设2：no anticipation(它是 SUTVA 的延伸，因为 SUTVA 要求您的结果是您当前治干预状态的函数，而不是未来治疗状态的函数)
+    - 如果有质疑，把颁布政策的年份置换为文件呢公布政策要讨论的年份
+
 ### topic + questions + paper_cited
