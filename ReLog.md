@@ -488,16 +488,14 @@ Bacon decomposition
 ## 任务清单
 - data + reduplicate 
   - local data
-- topic + question + partner
+- topic + question + partner 
 ### 优先必须完成
-- from econ to sportecon
+- from econ to SportEcon
   - Nicolas Watanabe
   - Marc F. Bellemare
-— from code to data
-  - Data 构建：面板数据如何从数据库构建！哪些学者？如何做的？ → 有模仿文章或者操作指南
+
 - 套路
   - 陈硕：一刀切 DID、渐进 DID
-
 - topic + questions + paper_cited
 ### 提前插队
 - 地板球备课
@@ -505,5 +503,51 @@ Bacon decomposition
 ### 可以暂放
 - 《置身事内》继续
 
+— from code to data
+  - Data 构建：面板数据如何从数据库构建！哪些学者？如何做的？ → 有模仿文章或者操作指南
+- 可以建构panel的方式
+  - cross sectional survey → 同样的问题，用于duration study
+  - 前瞻性的panel survey 
+    - panel：对于当前状态的问题
+    - 事件史数据
+      - 询问了上次访谈依赖，在两次回溯性访谈问题之间，电子生活历史的日历时间段
+      - 理想情况下，使用依赖性访谈（预加载）来避免这种影响
+
+- 国外 database
+  - 家庭panel 
+    - Panel Study of Income Dynamics(PSID)[since1968]
+    - The role model for all household panelsGerman Socio-Economic Panel(SOEP)[since1984]
+    - Understanding Society(UKHLS)[since1991]
+  - cohort panel
+    - British Cohort Studies:children born1958,1970,2000
+    - National Longitudinal Survey of Youth(NLSY79):U.S.cohort born around1960
+  - Panels on special populations in Germany recently started
+    - German Family Panel (pairfam), National Educational Panel Study (NEPS), 
+    - Survey of Health, Ageing and Retirement in Europe (SHARE), 
+    - Panel "Arbeitsmarkt und soziale Sicherung" (PASS), TwinLife, 
+    - Children of Immigrants (CILS4EU), Nationale Kohorte
 
 
+### 实践中如何做比较重要！
+- 建构的时间要事件时间归一的
+  - 把日历时间，变为相对时间
+    - ![2J7Tdy](https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/2J7Tdy.png)
+    - 事件是0年，
+- 参数解释
+  - ![KLZRCi](https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/KLZRCi.png)
+  - For each unit separately(for sure,only for the treated)
+  - The FE estimator is the average of these unit-specific estimates
+- DID + TWFE  重点要讨论的两个问题第一个就是
+  - 平衡趋势：  但是平衡趋势假设是没办法检验的
+  -  预期效应是可以检验的，通常将事件dummy 扩展到-1 - -6。
+  - 如果存在预期效应，可能存在
+    - 遗漏变量问题
+    - 干预组的增长更快速 → 样本自选择
+    - 逆向因果
+  - 通常作为检验加入，一般把太把负的时间dummy放入回归
+    - 仅当有强烈的预期效应理论原因时才包括负时间虚拟变量！
+  - 否则负时间假人可以用作诊断工具！
+    - 如果“真实”预期效应没有理论上的理由，那么它们暗示了具有严格外生性的严重问题。
+  ![99Hd2C](https://pkuzzq-image.oss-cn-beijing.aliyuncs.com/uPic/99Hd2C.png)
+
+  
