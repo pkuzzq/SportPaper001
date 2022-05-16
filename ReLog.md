@@ -482,4 +482,27 @@ Bacon decomposition
   - 假设2：no anticipation(它是 SUTVA 的延伸，因为 SUTVA 要求您的结果是您当前治干预状态的函数，而不是未来治疗状态的函数)
     - 如果有质疑，把颁布政策的年份置换为文件呢公布政策要讨论的年份
 
-### topic + questions + paper_cited
+
+# Log：2022-05-16
+
+## 任务清单
+- data + reduplicate 
+- topic + question + partner
+### 优先必须完成
+- from econ to sportecon
+  - Nicolas Watanabe
+  - Marc F. Bellemare
+— from code to data
+  - Data 构建：面板数据如何从数据库构建！哪些学者？如何做的？ → 有模仿文章或者操作指南
+- 套路
+  - 陈硕：一刀切 DID、渐进 DID
+
+- topic + questions + paper_cited
+### 提前插队
+- 地板球备课
+- SEA备课
+### 可以暂放
+- 《置身事内》继续
+
+
+
