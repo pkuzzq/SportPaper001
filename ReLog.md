@@ -487,6 +487,7 @@ Bacon decomposition
 
 ## 任务清单
 - data + reduplicate 
+  - local data
 - topic + question + partner
 ### 优先必须完成
 - from econ to sportecon
