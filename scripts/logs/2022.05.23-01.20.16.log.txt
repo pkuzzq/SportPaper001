@@ -1,0 +1,228 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/zhouzhengqing/Desktop/SportPaper001/scripts/logs/2022.05.23-01.20.16.log.txt
+  log type:  text
+ opened on:  23 May 2022, 01:20:16
+
+. 
+. * 配置Stata的图书馆环境和记录系统参数
+. run "$MyProject/scripts/programs/_config.do"
+-------------------------------------------------------------------------------
+Date and time: 23 May 2022 01:20:16
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+-------------------------------------------------------------------------------
+
+. 
+. * R包可以手动安装（见README），也可以通过取消注释以下一行自动安装
+. * 如果"$DisableR"！="1" rscript使用"$MyProject/scripts/programs/_install_R_packages.R"
+. * Stata和R的版本控制
+. 
+. version 17
+
+. if "$DisableR"!="1" rscript, rversion(4.2.0) require(tidyverse estimatr)
+Using default path: /usr/local/bin/Rscript
+Version information:
+[1] "已 ggplot2 绘图主题为 theme_ipsum()!"
+[1] "R installation is version 4.2.0"
+
+. 
+. * Create directories for output files
+. cap mkdir "$MyProject/processed"
+
+. cap mkdir "$MyProject/results"
+
+. cap mkdir "$MyProject/results/figures"
+
+. cap mkdir "$MyProject/results/intermediate"
+
+. cap mkdir "$MyProject/results/tables"
+
+. 
+. * Run project analysis
+. do "$MyProject/scripts/1_process_raw_data.do"
+
+. ************
+. * SCRIPT: 1_process_raw_data.do
+. * PURPOSE: imports the raw data and saves it in Stata readable format
+. *目的：导入原始数据并以Stata可读格式保存，提取主要变量，为了日后，尽量多提取
+. *将提取的变量，用Excel表记录下来)
+. ************
+. 
+. * Preamble (unnecessary when executing run.do)
+. run "$MyProject/scripts/programs/_config.do"
+-------------------------------------------------------------------------------
+Date and time: 23 May 2022 01:20:19
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+-------------------------------------------------------------------------------
+
+. 
+. 
+. ********************************************************************************
+. *                                                                              *
+. *                        Step 1: CFPS 2018                               *
+. *                                                                              *
+. ********************************************************************************
+. 
+. 
+. *************************
+. *提取变量少儿代答数据库
+. *************************
+. 
+. 
+. 
+.                                 
+. 
+. * 生成 10 个少儿代答库子集
+. forvalues i = 1(1)10{
+  2.     use "$data/CFPS2018/cfps2018childproxy_202012.dta", clear  //导入少儿家长代答数据库      
+  3.     global varlist      pid fid18 fid16 fid14 fid12 fid10 ////
+>                                 provcd18 countyid18 cid18 urban18 subsample subpopulation ///
+>                                 psu pid_a_f pid_a_m respc1pid school ///
+>                                 ibirthy gender  ///
+>                                 wf901 wf906 cfps2018eduy_im wz302 ///
+>                                 wc3_b_2
+  4.         keep $varlist //保留需要的少儿信息, 如果还需要其他信息, 可根据需要进行保留
+  5.     renvars _all, postfix(_`i')  //给所有的变量加后缀
+  6.     rename pid_`i' pid_a_c`i'    //变量重命名, 以保证匹配变量在 master 和 using 中一致
+  7.     save child`i', replace        
+  8. }
+file /CFPS2018/cfps2018childproxy_202012.dta not found
+r(601);
+
+end of do-file
+r(601);
+
+end of do-file
+
+r(601);
+
+. do "/var/folders/4n/lvtws49d62lgz1clcv_s160m0000gn/T//SD14786.000000"
+
+. run "$MyProject/scripts/programs/_config.do"
+-------------------------------------------------------------------------------
+Date and time: 23 May 2022 01:20:39
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+-------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/4n/lvtws49d62lgz1clcv_s160m0000gn/T//SD14786.000000"
+
+. forvalues i = 1(1)10{
+  2.     use "$MyProject/data/CFPS2018/cfps2018childproxy_202012.dta", clear  //导入少儿家长代答数据库    
+  3.     global varlist      pid fid18 fid16 fid14 fid12 fid10 ////
+>                                 provcd18 countyid18 cid18 urban18 subsample subpopulation ///
+>                                 psu pid_a_f pid_a_m respc1pid school ///
+>                                 ibirthy gender  ///
+>                                 wf901 wf906 cfps2018eduy_im wz302 ///
+>                                 wc3_b_2
+  4.         keep $varlist //保留需要的少儿信息, 如果还需要其他信息, 可根据需要进行保留
+  5.     renvars _all, postfix(_`i')  //给所有的变量加后缀
+  6.     rename pid_`i' pid_a_c`i'    //变量重命名, 以保证匹配变量在 master 和 using 中一致
+  7.     save child`i', replace        
+  8. }
+(file child1.dta not found)
+file child1.dta saved
+(file child2.dta not found)
+file child2.dta saved
+(file child3.dta not found)
+file child3.dta saved
+(file child4.dta not found)
+file child4.dta saved
+(file child5.dta not found)
+file child5.dta saved
+(file child6.dta not found)
+file child6.dta saved
+(file child7.dta not found)
+file child7.dta saved
+(file child8.dta not found)
+file child8.dta saved
+(file child9.dta not found)
+file child9.dta saved
+(file child10.dta not found)
+file child10.dta saved
+
+. 
+end of do-file
+
+. use "/Users/zhouzhengqing/Desktop/SportPaper001/data/child1.dta"
+
+. use "/Users/zhouzhengqing/Desktop/SportPaper001/data/child2.dta"
+
+. do "/var/folders/4n/lvtws49d62lgz1clcv_s160m0000gn/T//SD14786.000000"
+
+.     use "$MyProject/data/CFPS2018/cfps2018childproxy_202012.dta", clear  //导入少儿家长代答数据库    
+
+. 
+end of do-file
+
+. do "/var/folders/4n/lvtws49d62lgz1clcv_s160m0000gn/T//SD14786.000000"
+
+. run "$MyProject/scripts/programs/_config.do"
+-------------------------------------------------------------------------------
+Date and time: 23 May 2022 01:26:59
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+-------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/4n/lvtws49d62lgz1clcv_s160m0000gn/T//SD14786.000000"
+
+. **********************
+. * 综述
+. * 这个脚本为论文生成表格和数字。
+. * "我的项目"（作者：zzq）
+. * 所有的原始数据都存储在/data中
+. * 所有的表格都输出到/results/tables中
+. * 所有的数字都输出到/results/figures中。
+. *
+. * 软件要求
+. *分析在Windows上运行，使用Stata 17版本和R-3.6.0
+. *
+. *要执行一个干净的运行，请删除以下两个文件夹。
+. * /processed
+. * /results
+. **********************
+. 
+. * 用户必须定义这个全局宏，指向包括这个run.do脚本的文件夹路径
+. global MyProject "/Users/zhouzhengqing/Desktop/SportPaper001"
+
+. * 要禁用分析的R部分，请将以下标志设置为1
+. 
+. global DisableR = 0
+
+. 
+. * Confirm that the global for the project root directory was defined
+. assert !missing("$MyProject")
+
+. 
+. * Initialize log
+. clear
+
+. set more off
+
+. cap mkdir "$MyProject/scripts/logs"
+
+. cap log close

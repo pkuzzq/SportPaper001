@@ -1,0 +1,103 @@
+----------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/zhouzhengqing/Desktop/SportPaper001/scripts/logs/2022.05.23-19.06.13.log.txt
+  log type:  text
+ opened on:  23 May 2022, 19:06:13
+
+. 
+. * 配置Stata的图书馆环境和记录系统参数
+. run "$MyProject/scripts/programs/_config.do"
+-------------------------------------------------------------------------------
+Date and time: 23 May 2022 19:06:13
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+-------------------------------------------------------------------------------
+
+. 
+. * R包可以手动安装（见README），也可以通过取消注释以下一行自动安装
+. * 如果"$DisableR"！="1" rscript使用"$MyProject/scripts/programs/_install_R_packages.R"
+. * Stata和R的版本控制
+. 
+. version 17
+
+. if "$DisableR"!="1" rscript, rversion(4.2.0) require(tidyverse estimatr)
+Using default path: /usr/local/bin/Rscript
+Version information:
+[1] "已 ggplot2 绘图主题为 theme_ipsum()!"
+[1] "R installation is version 4.2.0"
+
+. 
+. * Create directories for output files
+. cap mkdir "$MyProject/processed"
+
+. cap mkdir "$MyProject/results"
+
+. cap mkdir "$MyProject/results/figures"
+
+. cap mkdir "$MyProject/results/intermediate"
+
+. cap mkdir "$MyProject/results/tables"
+
+. 
+end of do-file
+
+. do "/var/folders/4n/lvtws49d62lgz1clcv_s160m0000gn/T//SD17527.000000"
+
+.     use "$MyProject/data/CFPS2018/cfps2018childproxy_202012.dta", clear  //导入少儿家长代答数据库    
+
+. 
+end of do-file
+
+. use "/Users/zhouzhengqing/Desktop/onlinedemo.dta"
+
+. use "/Users/zhouzhengqing/Desktop/SportPaper001/data/CFPS2020/cfps2020childproxy_202112.dta"
+
+. codebook wf901 
+
+-----------------------------------------------------------------------------------------------------------------------------
+wf901                                                                                                                喜欢爬高
+-----------------------------------------------------------------------------------------------------------------------------
+
+                  Type: Numeric (double)
+                 Label: wf901
+
+                 Range: [-8,5]                        Units: 1
+         Unique values: 7                         Missing .: 113/6,906
+
+            Tabulation: Freq.   Numeric  Label
+                        5,526        -8  不适用
+                            1        -1  不知道
+                           68         1  从不
+                          223         2  偶尔
+                          111         3  有时
+                          630         4  经常
+                          234         5  总是
+                          113         .  
+
+. codebook wf906
+
+-----------------------------------------------------------------------------------------------------------------------------
+wf906                                                                                                                活动量大
+-----------------------------------------------------------------------------------------------------------------------------
+
+                  Type: Numeric (double)
+                 Label: wf906
+
+                 Range: [-8,5]                        Units: 1
+         Unique values: 7                         Missing .: 113/6,906
+
+            Tabulation: Freq.   Numeric  Label
+                        5,526        -8  不适用
+                            3        -1  不知道
+                           60         1  从不
+                          211         2  偶尔
+                          140         3  有时
+                          588         4  经常
+                          265         5  总是
+                          113         .  
+
+. exit

@@ -1,0 +1,201 @@
+-------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/zhouzhengqing/Desktop/SportPaper001/scripts/logs/2022.05.24-13.47.11.log.txt
+  log type:  text
+ opened on:  24 May 2022, 13:47:11
+
+. 
+. * 配置Stata的图书馆环境和记录系统参数
+. run "$MyProject/scripts/programs/_config.do"
+-------------------------------------------------------------------------------
+Date and time: 24 May 2022 13:47:11
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+-------------------------------------------------------------------------------
+
+. 
+. * R包可以手动安装(见README),也可以通过取消注释以下一行自动安装
+. * 如果"$DisableR"!="1" rscript使用"$MyProject/scripts/programs/_install_R_packages.R"
+. * Stata和R的版本控制
+. 
+. version 17
+
+. if "$DisableR"!="1" rscript, rversion(4.2.0) require(tidyverse estimatr)
+Using default path: /usr/local/bin/Rscript
+Version information:
+[1] "已 ggplot2 绘图主题为 theme_ipsum()!"
+[1] "R installation is version 4.2.0"
+
+. 
+. * Create directories for output files
+. cap mkdir "$MyProject/processed"
+
+. cap mkdir "$MyProject/results"
+
+. cap mkdir "$MyProject/results/figures"
+
+. cap mkdir "$MyProject/results/intermediate"
+
+. cap mkdir "$MyProject/results/tables"
+
+. 
+. * Run project analysis
+. do "$MyProject/scripts/1_process_raw_data.do"
+
+. ************
+. * SCRIPT: 1_process_raw_data.do
+. * PURPOSE: imports the raw data and saves it in Stata readable format
+. *目的:导入原始数据并以Stata可读格式保存,提取主要变量,为了日后,尽量多提取
+. *将提取的变量,用Excel表记录下来)
+. ************
+. 
+. * Preamble (unnecessary when executing run.do)
+. run "$MyProject/scripts/programs/_config.do"
+-------------------------------------------------------------------------------
+Date and time: 24 May 2022 13:47:13
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+-------------------------------------------------------------------------------
+
+. 
+. ********************************************************************************
+. *                                                                              *
+. *                        Step 1: CFPS 2018                               *
+. *                                                                              *
+. ********************************************************************************
+. 
+. * 导入儿童代答库
+. * 可以与家庭关系库匹配
+. use "$MyProject/data/CFPS2018/cfps2018childproxy_202012.dta", clear  //导入少儿家长代答数据库        
+
+. global varlist_child2018        pid fid18 fid16 fid14 fid12 fid10 ////
+>                                                         provcd18 countyid18 cid18 urban18 subsample ///
+>                                                         subpopulation psu pid_a_f pid_a_m respc1pid ///
+>                                                         school ibirthy gender  ///
+>                                                         wf901 wf906 cfps2018eduy_im wz302 ///
+>                                                         wc3_b_2
+
+. keep $varlist_child2018 //保留被代答的儿童兴趣变量
+
+. save "$MyProject/processed/intermediate/cfps2018_varlist_child2018.dta", replace
+(file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2018_varlist_child2018.dta not
+    found)
+file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2018_varlist_child2018.dta saved
+
+. 
+. * 导入家庭关系库
+. * 可以与少儿库、成人库进行匹配
+. use "$MyProject/data/CFPS2018/cfps2018famconf_202008.dta", clear  //导入少儿家长代答数据库
+
+. global varlist_famconf2018      pid fid*  gene*  pid_a_* rtype_end18 code_a_p co_a18_p ///
+>                                                         tb6_a18_p  
+
+. keep $varlist_famconf2018   //保留成员信息变量
+
+. save "$MyProject/processed/intermediate/cfps2018_varlist_famconf2018.dta", replace
+(file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2018_varlist_famconf2018.dta
+    not found)
+file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2018_varlist_famconf2018.dta
+    saved
+
+. 
+. * 导入成人库
+. * 可以与家庭库进行匹配
+. use "$MyProject/data/CFPS2018/cfps2018person_202012.dta", clear  //导入少儿家长代答数据库
+
+. global varlist_person2018       pid fid18 fid16 fid14 fid12 fid10 ///
+>                                                         pid_a_f pid_a_m countyid18 cid18 interviewerid18 //
+> /
+>                                                         qp701 qp702    
+
+. keep $varlist_person2018 //保留成员信息变量
+
+. save "$MyProject/processed/intermediate/cfps2018_varlist_person2018.dta", replace
+(file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2018_varlist_person2018.dta not
+    found)
+file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2018_varlist_person2018.dta
+    saved
+
+. 
+. ********************************************************************************
+. *                                                                              *
+. *                        Step 2: CFPS 2010                               *
+. *                                                                              *
+. ********************************************************************************
+. 
+. * 导入成人库
+. use "$MyProject/data/CFPS2010/cfps2010adult_201906.dta", clear  //导入少儿家长代答数据库
+
+. global varlist_adult2010        pid* fid*  ql1_s_* ql101_a_3
+
+. keep $varlist_adult2010 //保留成员信息变量
+
+. save "$MyProject/processed/intermediate/cfps2010_varlist_adult2010.dta", replace
+(file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2010_varlist_adult2010.dta not
+    found)
+file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2010_varlist_adult2010.dta saved
+
+. 
+. * 导入少儿库
+. use "$MyProject/data/CFPS2010/cfps2010child_201906.dta", clear  //导入少儿家长代答数据库
+
+. global varlist_child2010        *id* wl3 
+
+. keep $varlist_child2010         //保留成员信息变量
+
+. 
+. * 导入家庭关系库
+. use "$MyProject/data/CFPS2010/cfps2010famconf_202008.dta", clear  //导入少儿家长代答数据库
+
+. global varlist_famconf2010      *id* *best
+
+. keep $varlist_famconf2010       //保留成员信息变量
+
+. 
+. * 导入村居库
+. use "$MyProject/data/CFPS2010/cfps2010comm_201906.dta", clear  //导入少儿家长代答数据库
+
+. global varlist_comm2010         ca301_a_*  ca3_s_* cid countyid ce3 
+
+. keep $varlist_comm2010          //保留成员信息变量
+
+. 
+. ********************************************************************************
+. *                                                                              *
+. *                        Step 3: CFPS 2012                               *
+. *                                                                              *
+. ********************************************************************************
+. 
+. * 导入成人库
+. use "$MyProject/data/CFPS2012/cfps2012adult_201906.dta", clear  //导入少儿家长代答数据库
+
+. global varlist_adult2012        *id* *id*  qp701
+
+. keep $varlist_adult2012 //保留成员信息变量
+
+. save "$MyProject/processed/intermediate/cfps2010_varlist_adult.dta", replace
+(file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2010_varlist_adult.dta not
+    found)
+file /Users/zhouzhengqing/Desktop/SportPaper001/processed/intermediate/cfps2010_varlist_adult.dta saved
+
+. 
+. 
+. merge 1:1 pid using cfps2018person_202012, force  //匹配个人库
+file cfps2018person_202012.dta not found
+r(601);
+
+end of do-file
+r(601);
+
+end of do-file
+
+r(601);
+

@@ -1,0 +1,175 @@
+----------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/zhouzhengqing/Desktop/SportPaper001//scripts/logs/2022.0
+> 5.22-01.35.48.log.txt
+  log type:  text
+ opened on:  22 May 2022, 01:35:48
+
+. 
+. * Configure Stata's library environment and record system parameters
+. run "$MyProject/scripts/programs/_config.do"
+----------------------------------------------------------------------------
+Date and time: 22 May 2022 01:35:48
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+----------------------------------------------------------------------------
+
+. 
+. * R packages can be installed manually (see README) or installed automatic
+> ally by uncommenting the following line
+. * if "$DisableR"!="1" rscript using "$MyProject/scripts/programs/_install_
+> R_packages.R"
+. 
+. * Stata and R version control
+. version 17
+
+. if "$DisableR"!="1" rscript, rversion(3.6) require(tidyverse estimatr)
+Using default path: /usr/local/bin/Rscript
+Version information:
+[1] "已 ggplot2 绘图主题为 theme_ipsum()!"
+[1] "R installation is version 4.2.0"
+
+. 
+. * Create directories for output files
+. cap mkdir "$MyProject/processed"
+
+. cap mkdir "$MyProject/results"
+
+. cap mkdir "$MyProject/results/figures"
+
+. cap mkdir "$MyProject/results/intermediate"
+
+. cap mkdir "$MyProject/results/tables"
+
+. 
+. * Run project analysis
+. do "$MyProject/scripts/1_process_raw_data.do"
+
+. ************
+. * SCRIPT: 1_process_raw_data.do
+. * PURPOSE: imports the raw data and saves it in Stata readable format
+. ************
+. 
+. * Preamble (unnecessary when executing run.do)
+. run "$MyProject/scripts/programs/_config.do"
+----------------------------------------------------------------------------
+Date and time: 22 May 2022 01:35:54
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+----------------------------------------------------------------------------
+
+. 
+. ************
+. * Code begins
+. ************
+. 
+. insheet using "$MyProject/data/auto.csv", comma clear
+file /Users/zhouzhengqing/Desktop/SportPaper001//data/auto.csv not found
+r(601);
+
+end of do-file
+r(601);
+
+end of do-file
+
+r(601);
+
+. do "/var/folders/4n/lvtws49d62lgz1clcv_s160m0000gn/T//SD01072.000000"
+
+. run "$MyProject/scripts/programs/_config.do"
+----------------------------------------------------------------------------
+Date and time: 22 May 2022 01:36:07
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+----------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "/var/folders/4n/lvtws49d62lgz1clcv_s160m0000gn/T//SD01072.000000"
+
+. do "$MyProject/scripts/1_process_raw_data.do"
+
+. ************
+. * SCRIPT: 1_process_raw_data.do
+. * PURPOSE: imports the raw data and saves it in Stata readable format
+. ************
+. 
+. * Preamble (unnecessary when executing run.do)
+. run "$MyProject/scripts/programs/_config.do"
+----------------------------------------------------------------------------
+Date and time: 22 May 2022 01:37:13
+Stata version: 17
+Updated as of: 20 Apr 2021
+Variant:       MP
+Processors:    8
+OS:            MacOSX 12.4.0
+Machine type:  Macintosh (Intel 64-bit)
+----------------------------------------------------------------------------
+
+. 
+. ************
+. * Code begins
+. ************
+. 
+. insheet using "$MyProject/data/auto.csv", comma clear
+file /Users/zhouzhengqing/Desktop/SportPaper001//data/auto.csv not found
+r(601);
+
+end of do-file
+r(601);
+
+end of do-file
+
+r(601);
+
+. do "/var/folders/4n/lvtws49d62lgz1clcv_s160m0000gn/T//SD01072.000000"
+
+. **********************
+. * OVERVIEW
+. *   This script generates tables and figures for the paper:
+. *       "My Project" (by Julian Reif)
+. *   All raw data are stored in /data
+. *   All tables are outputted to /results/tables
+. *   All figures are outputted to /results/figures
+. *
+. * SOFTWARE REQUIREMENTS
+. *   Analyses run on Windows using Stata version 15 and R-3.6.0
+. *
+. * TO PERFORM A CLEAN RUN, DELETE THE FOLLOWING TWO FOLDERS:
+. *   /processed
+. *   /results
+. **********************
+. 
+. * User must define this global macro to point to the folder path that incl
+> udes this run.do script
+. * global MyProject "C:/Users/jdoe/MyProject"
+. 
+. * To disable the R portion of the analysis, set the following flag to 1
+. global DisableR = 0
+
+. 
+. * Confirm that the global for the project root directory was defined
+. assert !missing("$MyProject")
+
+. 
+. * Initialize log
+. clear
+
+. set more off
+
+. cap mkdir "$MyProject/scripts/logs"
+
+. cap log close
