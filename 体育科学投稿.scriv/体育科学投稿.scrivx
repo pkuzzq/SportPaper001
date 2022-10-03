@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="5651ADFF-7F0E-4EC3-861A-F03D511DE5EB" Version="2.0" Creator="SCRMAC-3.2.3-14869" Device="zhouzhengqingdeMacBook-Pro" Author="Zhou Zhengqing" Modified="2022-09-09 13:15:04 +0800" ModID="A07416BB-5967-436B-9987-974E0BA2B83C">
+<ScrivenerProject Identifier="5651ADFF-7F0E-4EC3-861A-F03D511DE5EB" Version="2.0" Creator="SCRMAC-3.2.3-14869" Device="zhouzhengqingdeMacBook-Pro" Author="Zhou Zhengqing" Modified="2022-10-02 22:04:23 +0800" ModID="438694AA-0DF6-4BCD-A928-C53ED6489AEB">
     <Binder>
         <BinderItem UUID="3FA74D50-2B26-46FC-A9A8-9661879F8971" Type="DraftFolder" Created="2006-11-05 00:27:29 +0800" Modified="2022-09-05 11:28:00 +0800">
             <Title>体育经济学教学课程：感性认识理性经济学的途径</Title>
@@ -17,7 +17,7 @@
                 </CorkboardSettings>
             </CorkboardAndOutliner>
             <Children>
-                <BinderItem UUID="2654FEE1-D90D-4E70-9B94-F29BD099BE5E" Type="Folder" Created="2022-09-05 11:24:54 +0800" Modified="2022-09-08 01:19:08 +0800">
+                <BinderItem UUID="2654FEE1-D90D-4E70-9B94-F29BD099BE5E" Type="Folder" Created="2022-09-05 11:24:54 +0800" Modified="2022-09-10 15:28:35 +0800">
                     <Title>构思与框架</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -25,6 +25,83 @@
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
+                    <Children>
+                        <BinderItem UUID="AB6B2ABF-FF8A-4497-8A55-808DDF2C699A" Type="Text" Created="2022-09-10 02:50:37 +0800" Modified="2022-10-02 20:37:01 +0800">
+                            <Title>引言</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1267,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="6CDBFB64-00A8-4C5D-BB71-DCBB02B5AE01" Type="Text" Created="2022-09-24 01:38:05 +0800" Modified="2022-09-29 14:04:59 +0800">
+                            <Title>主要挑战
+主要挑战</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>12,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="AD6B888D-32E6-4056-B380-AF31B236D0B6" Type="Text" Created="2022-09-17 23:55:27 +0800" Modified="2022-09-29 14:08:30 +0800">
+                            <Title>应对挑战</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>140,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="9D7C35CD-D5BA-412D-B7E0-717B1CF22114" Type="Text" Created="2022-09-27 01:25:06 +0800" Modified="2022-10-02 20:38:06 +0800">
+                            <Title>案例分类</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="37E30341-08E5-42B8-A3E7-2D7618FDE211" Type="Text" Created="2022-09-29 14:14:53 +0800" Modified="2022-10-02 22:04:23 +0800">
+                                    <Title>教学案例1：理论型问题讲授</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>280,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="A445D815-71D9-451E-89BF-A2F73B54A366" Type="Text" Created="2022-09-29 14:15:34 +0800" Modified="2022-09-29 14:15:56 +0800">
+                                    <Title>教学案例2：实践型问题讲授</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>0,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="C55549E6-6261-4828-B1D4-D76FEA5670D8" Type="Text" Created="2022-09-27 01:25:26 +0800" Modified="2022-09-28 01:59:14 +0800">
+                            <Title>通过案例教学的优势</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>749,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="B2F9F202-0D45-47AB-9F61-C2AD3CAFE7C0" Type="Text" Created="2022-09-28 16:22:57 +0800" Modified="2022-09-29 13:49:19 +0800">
+                            <Title>以发表为目标的教学</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>459,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
                 </BinderItem>
                 <BinderItem UUID="F0ABADB3-7727-4C5F-82A9-37C3F65AC8A5" Type="Folder" Created="2021-01-02 23:30:10 +0800" Modified="2021-03-21 07:23:18 +0800">
                     <Title>研究动机</Title>
@@ -41,7 +118,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>147,0</TextSelection>
+                                <TextSelection>796,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="F64495A4-9FE7-45C3-8139-CAB8FB54E616" Type="Text" Created="2021-02-20 18:01:31 +0800" Modified="2021-06-02 07:03:18 +0800">
@@ -620,6 +697,33 @@
                         <TextSelection>26,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
+                <BinderItem UUID="706A390A-E60C-4849-B6D4-01DDA547FE05" Type="Text" Created="2022-09-14 01:21:03 +0800" Modified="2022-10-01 12:27:19 +0800">
+                    <Title>
+体育课程的经济学也比其他班级更有可能为其他部门创造溢出。这样的阶级本质上必定是跨学科的，并结合了各种经济学子场。该课程的学生可以品尝到工业组织，公共经济学和劳动经济学等标准课程。
+
+体育经济学教学一直是研究者和政策制定者必须要重视的环节。随着经济全球化，体育经济吸引了越来越多的投资者和消费者，很多赛事影响力已经远远超越了本地本国的界限，成为全球性关注的焦点。一方面，经济学理论的发展为体育经济研究提供更多理论土壤；另一方面，体育经济的包容性随着重大赛事、数字媒体和科技的发展，延伸到了更多领域中。
+
+
+
+国家战略引导+人民消费观念+新时代经济发展需求。。。。。。据统计,2015 年,我国居民经常参加运动健身的人数达3.6亿，而运动健身休闲产业总计达8千亿元。国务院在 2014-2016年间下达了一系列关于发展全民运动健身的文件，包括《全民健身计划(2016-2020年）»和《关于加快发展健身休闲产业的指导意见》，提倡以全民运动健身来提高国民健康水平。在政府的大力倡导与推动下，到2025 年， 我国居民经常参加运动健身的人数预计达到3.6亿,而运动健身休闲的产业规模将增长三倍， 达到3 万亿元。2014 年10月20日下发的《国务院关于加快发展体育产业促进体育消费的若干意见》提出了由计划体制向市场化转变，初步尝试体育竞赛与经营活动结合，鼓励企业加盟,实现产业社会化的号召。随着市场化的发展，体育运动包括全民体育健身所带来的商业活动，,包括电视转播、旅游、广告、服务产业、体育用品，如球队文化产品、体育运动器材和相关健身设备,在我国整体经济中将会占到很大的份额。
+
+</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>1089,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="19BEE850-C255-43AE-AA55-969394F2328C" Type="Text" Created="2022-09-10 02:44:54 +0800" Modified="2022-09-24 01:40:47 +0800">
+                    <Title>2022年09月10日</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>223,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
             </Children>
         </BinderItem>
         <BinderItem UUID="E4D250BF-8047-4F88-BE3A-F9D65F8DA7E9" Type="Folder" Created="2010-10-30 02:14:01 +0800" Modified="2010-10-30 02:14:04 +0800">
@@ -716,6 +820,15 @@
                         </CorkboardSettings>
                     </CorkboardAndOutliner>
                 </BinderItem>
+                <BinderItem UUID="BC5A2EB2-9703-4CD4-8FAA-E1FB6517679A" Type="Text" Created="2022-09-18 17:40:31 +0800" Modified="2022-09-19 23:04:51 +0800">
+                    <Title>双奥之城未来体育发展</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>99,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
             </Children>
         </BinderItem>
     </Binder>
@@ -784,12 +897,12 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Characters" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 20:24:39 +0800" IgnoreDeadline="Yes">15000</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2022-09-10 00:00:00 +0800" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">50</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2022-09-09 13:14:58 +0800"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2022-10-03 00:00:00 +0800" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">50</SessionTarget>
+        <PreviousSession Words="1026" Characters="2116" Date="2022-10-02 22:02:24 +0800"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-09-09 00:00:00 +0800">
-        <DraftWordCount>0</DraftWordCount>
-        <DraftCharCount>0</DraftCharCount>
+    <RecentWritingHistory Date="2022-10-02 00:00:00 +0800">
+        <DraftWordCount>-53</DraftWordCount>
+        <DraftCharCount>-83</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
