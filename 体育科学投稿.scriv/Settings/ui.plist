@@ -6,10 +6,58 @@
 	<string>/Users/zhouzhengqing/Desktop</string>
 	<key>NotesScaleFactor</key>
 	<real>1</real>
+	<key>QRPanelSettings</key>
+	<dict>
+		<key>6CDBFB64-00A8-4C5D-BB71-DCBB02B5AE01</key>
+		<dict>
+			<key>BinderUUID</key>
+			<string>6CDBFB64-00A8-4C5D-BB71-DCBB02B5AE01</string>
+			<key>CurrentMetaData</key>
+			<integer>-1</integer>
+			<key>MainPaneWidth</key>
+			<real>475</real>
+			<key>ProjectBookmarksSplitInfo</key>
+			<array>
+				<string>{{0, 0}, {225, 495}}</string>
+				<string>{{235, 0}, {443, 495}}</string>
+			</array>
+			<key>ProjectBookmarksVisible</key>
+			<false/>
+			<key>ShowsFormatBar</key>
+			<true/>
+			<key>ShowsMetaData</key>
+			<false/>
+			<key>SplitInfo</key>
+			<array>
+				<string>{{0, 277}, {475, 167}}</string>
+			</array>
+			<key>TextSettings</key>
+			<dict>
+				<key>hasMultiplePages</key>
+				<false/>
+				<key>isRulerVisible</key>
+				<false/>
+				<key>lineNumberingInterval</key>
+				<integer>1</integer>
+				<key>showsLineNumbers</key>
+				<false/>
+				<key>textFocusMode</key>
+				<integer>0</integer>
+				<key>textScaleFactor</key>
+				<real>1</real>
+				<key>usesFacingPages</key>
+				<false/>
+				<key>usesTypewriterScrolling</key>
+				<false/>
+			</dict>
+			<key>WindowFrame</key>
+			<string>2514 454 475 528 1792 40 1920 1080 </string>
+		</dict>
+	</dict>
 	<key>binderSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {363, 1021}}</string>
-		<string>{{364, 0}, {1556, 1021}}</string>
+		<string>{{0, 0}, {435, 1005}}</string>
+		<string>{{436, 0}, {1484, 1005}}</string>
 	</array>
 	<key>binderWidth</key>
 	<real>265</real>
@@ -96,6 +144,11 @@
 			<integer>-1</integer>
 		</dict>
 		<key>33B44408-C8B9-4E9B-B0EE-1E99618FDA04</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>36C136D5-0316-4CA6-96F1-0406955925E5</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -200,7 +253,17 @@
 			<key>Row</key>
 			<integer>-1</integer>
 		</dict>
+		<key>79C3C909-997D-49B6-B191-A27FB259C947</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
 		<key>85B89DBD-7171-4C2A-BAE9-541EAF41E9EE</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>88A3D282-054B-4F0F-89D8-71E5927FCC13</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -405,6 +468,11 @@
 			<key>Row</key>
 			<integer>-1</integer>
 		</dict>
+		<key>FCED55A4-3D67-4750-9F7E-7B828BFA9810</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
 		<key>Project</key>
 		<dict>
 			<key>Row</key>
@@ -427,7 +495,7 @@
 	</array>
 	<key>editorSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {1280, 224}}</string>
+		<string>{{0, 0}, {1408, 337}}</string>
 	</array>
 	<key>exportFilesFormat</key>
 	<integer>3</integer>
@@ -447,8 +515,8 @@
 	<integer>2</integer>
 	<key>inspectorSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {1328, 991}}</string>
-		<string>{{1329, 0}, {227, 991}}</string>
+		<string>{{0, 0}, {1256, 975}}</string>
+		<string>{{1257, 0}, {227, 975}}</string>
 	</array>
 	<key>inspectorWidth</key>
 	<real>245</real>
@@ -496,7 +564,7 @@
 		<string>{{0, 508}, {762.5, 507}}</string>
 	</array>
 	<key>supportingDocumentEditor.scrollRect</key>
-	<string>{{0, 70.5}, {620, 467.5}}</string>
+	<string>{{0, 0}, {620, 444}}</string>
 	<key>supportingDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>

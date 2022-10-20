@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="5651ADFF-7F0E-4EC3-861A-F03D511DE5EB" Version="2.0" Creator="SCRMAC-3.2.3-14869" Device="zhouzhengqingdeMacBook-Pro" Author="Zhou Zhengqing" Modified="2022-10-02 22:04:23 +0800" ModID="438694AA-0DF6-4BCD-A928-C53ED6489AEB">
+<ScrivenerProject Identifier="5651ADFF-7F0E-4EC3-861A-F03D511DE5EB" Version="2.0" Creator="SCRMAC-3.2.3-14869" Device="zhouzhengqingdeMacBook-Pro" Author="Zhou Zhengqing" Modified="2022-10-17 10:50:28 +0800" ModID="499A5784-A41F-42C5-B2C4-B6069FBA1217">
     <Binder>
-        <BinderItem UUID="3FA74D50-2B26-46FC-A9A8-9661879F8971" Type="DraftFolder" Created="2006-11-05 00:27:29 +0800" Modified="2022-09-05 11:28:00 +0800">
-            <Title>体育经济学教学课程：感性认识理性经济学的途径</Title>
+        <BinderItem UUID="3FA74D50-2B26-46FC-A9A8-9661879F8971" Type="DraftFolder" Created="2006-11-05 00:27:29 +0800" Modified="2022-10-06 10:46:09 +0800">
+            <Title>体育经济学教学课程：从感性到理性经济学的途径</Title>
             <CorkboardAndOutliner>
                 <SelectedSubdocumentUUIDs></SelectedSubdocumentUUIDs>
                 <CorkboardSettings>
                     <Arrangement>Freeform</Arrangement>
                     <FreeformCorkboardDocuments>
-                        <IndexCardBinderUUID Position="2.133333,0.073333" TimeStamp="2021-02-17 16:51:24 +0800">B417D41A-F2A9-44B1-A836-938BAE95CBBD</IndexCardBinderUUID>
+                        <IndexCardBinderUUID Position="1.15,0.11" TimeStamp="2021-02-17 16:51:24 +0800">B243567F-DB02-44BA-AD71-3BBE7F805ABB</IndexCardBinderUUID>
                         <IndexCardBinderUUID Position="0.07,0.086667" TimeStamp="2021-03-15 00:14:13 +0800">1E29EF5F-92CF-4E35-B788-DBA837A7607B</IndexCardBinderUUID>
                         <IndexCardBinderUUID Position="0.143333,0.809933" TimeStamp="2021-02-17 16:51:24 +0800">23A8E21E-EB62-4040-9177-6F3824F8AD61</IndexCardBinderUUID>
+                        <IndexCardBinderUUID Position="2.133333,0.073333" TimeStamp="2021-02-17 16:51:24 +0800">B417D41A-F2A9-44B1-A836-938BAE95CBBD</IndexCardBinderUUID>
                         <IndexCardBinderUUID Position="0.053333,0.073333" TimeStamp="2021-02-17 16:51:24 +0800">F0ABADB3-7727-4C5F-82A9-37C3F65AC8A5</IndexCardBinderUUID>
-                        <IndexCardBinderUUID Position="1.15,0.11" TimeStamp="2021-02-17 16:51:24 +0800">B243567F-DB02-44BA-AD71-3BBE7F805ABB</IndexCardBinderUUID>
                     </FreeformCorkboardDocuments>
                 </CorkboardSettings>
             </CorkboardAndOutliner>
             <Children>
-                <BinderItem UUID="2654FEE1-D90D-4E70-9B94-F29BD099BE5E" Type="Folder" Created="2022-09-05 11:24:54 +0800" Modified="2022-09-10 15:28:35 +0800">
+                <BinderItem UUID="2654FEE1-D90D-4E70-9B94-F29BD099BE5E" Type="Folder" Created="2022-09-05 11:24:54 +0800" Modified="2022-10-11 00:37:38 +0800">
                     <Title>构思与框架</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -26,16 +26,16 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="AB6B2ABF-FF8A-4497-8A55-808DDF2C699A" Type="Text" Created="2022-09-10 02:50:37 +0800" Modified="2022-10-02 20:37:01 +0800">
+                        <BinderItem UUID="AB6B2ABF-FF8A-4497-8A55-808DDF2C699A" Type="Text" Created="2022-09-10 02:50:37 +0800" Modified="2022-10-11 00:37:14 +0800">
                             <Title>引言</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1267,0</TextSelection>
+                                <TextSelection>449,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="6CDBFB64-00A8-4C5D-BB71-DCBB02B5AE01" Type="Text" Created="2022-09-24 01:38:05 +0800" Modified="2022-09-29 14:04:59 +0800">
+                        <BinderItem UUID="6CDBFB64-00A8-4C5D-BB71-DCBB02B5AE01" Type="Text" Created="2022-09-24 01:38:05 +0800" Modified="2022-10-11 00:37:14 +0800">
                             <Title>主要挑战
 主要挑战</Title>
                             <MetaData>
@@ -45,7 +45,7 @@
                                 <TextSelection>12,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="AD6B888D-32E6-4056-B380-AF31B236D0B6" Type="Text" Created="2022-09-17 23:55:27 +0800" Modified="2022-09-29 14:08:30 +0800">
+                        <BinderItem UUID="AD6B888D-32E6-4056-B380-AF31B236D0B6" Type="Text" Created="2022-09-17 23:55:27 +0800" Modified="2022-10-11 00:37:15 +0800">
                             <Title>应对挑战</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -54,36 +54,56 @@
                                 <TextSelection>140,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="9D7C35CD-D5BA-412D-B7E0-717B1CF22114" Type="Text" Created="2022-09-27 01:25:06 +0800" Modified="2022-10-02 20:38:06 +0800">
+                        <BinderItem UUID="9D7C35CD-D5BA-412D-B7E0-717B1CF22114" Type="Text" Created="2022-09-27 01:25:06 +0800" Modified="2022-10-11 00:37:15 +0800">
                             <Title>案例分类</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>625,6</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem UUID="37E30341-08E5-42B8-A3E7-2D7618FDE211" Type="Text" Created="2022-09-29 14:14:53 +0800" Modified="2022-10-02 22:04:23 +0800">
+                                <BinderItem UUID="37E30341-08E5-42B8-A3E7-2D7618FDE211" Type="Text" Created="2022-09-29 14:14:53 +0800" Modified="2022-10-11 00:37:15 +0800">
                                     <Title>教学案例1：理论型问题讲授</Title>
                                     <MetaData>
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>280,0</TextSelection>
+                                        <TextSelection>2338,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
-                                <BinderItem UUID="A445D815-71D9-451E-89BF-A2F73B54A366" Type="Text" Created="2022-09-29 14:15:34 +0800" Modified="2022-09-29 14:15:56 +0800">
+                                <BinderItem UUID="A445D815-71D9-451E-89BF-A2F73B54A366" Type="Text" Created="2022-09-29 14:15:34 +0800" Modified="2022-10-11 00:37:14 +0800">
                                     <Title>教学案例2：实践型问题讲授</Title>
                                     <MetaData>
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>0,0</TextSelection>
+                                        <TextSelection>39,0</TextSelection>
                                     </TextSettings>
+                                    <Children>
+                                        <BinderItem UUID="FCED55A4-3D67-4750-9F7E-7B828BFA9810" Type="Text" Created="2022-10-08 19:41:42 +0800" Modified="2022-10-11 00:37:15 +0800">
+                                            <Title>1.媒体对联盟收入的贡献</Title>
+                                            <MetaData>
+                                                <IncludeInCompile>Yes</IncludeInCompile>
+                                            </MetaData>
+                                            <TextSettings>
+                                                <TextSelection>22,0</TextSelection>
+                                            </TextSettings>
+                                        </BinderItem>
+                                        <BinderItem UUID="36C136D5-0316-4CA6-96F1-0406955925E5" Type="Text" Created="2022-10-08 19:40:08 +0800" Modified="2022-10-11 00:37:14 +0800">
+                                            <Title>2.联盟间的差异与共性</Title>
+                                            <MetaData>
+                                                <IncludeInCompile>Yes</IncludeInCompile>
+                                            </MetaData>
+                                            <TextSettings>
+                                                <TextSelection>1276,0</TextSelection>
+                                            </TextSettings>
+                                        </BinderItem>
+                                    </Children>
                                 </BinderItem>
                             </Children>
                         </BinderItem>
-                        <BinderItem UUID="C55549E6-6261-4828-B1D4-D76FEA5670D8" Type="Text" Created="2022-09-27 01:25:26 +0800" Modified="2022-09-28 01:59:14 +0800">
+                        <BinderItem UUID="C55549E6-6261-4828-B1D4-D76FEA5670D8" Type="Text" Created="2022-09-27 01:25:26 +0800" Modified="2022-10-11 00:37:15 +0800">
                             <Title>通过案例教学的优势</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -92,7 +112,7 @@
                                 <TextSelection>749,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="B2F9F202-0D45-47AB-9F61-C2AD3CAFE7C0" Type="Text" Created="2022-09-28 16:22:57 +0800" Modified="2022-09-29 13:49:19 +0800">
+                        <BinderItem UUID="B2F9F202-0D45-47AB-9F61-C2AD3CAFE7C0" Type="Text" Created="2022-09-28 16:22:57 +0800" Modified="2022-10-11 00:37:15 +0800">
                             <Title>以发表为目标的教学</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -541,18 +561,12 @@
                         </BinderItem>
                         <BinderItem UUID="704941F5-2CF4-484A-86DE-1C0EA629637B" Type="Text" Created="2021-03-22 06:12:22 +0800" Modified="2021-03-22 06:12:40 +0800">
                             <Title>体力活动 M 在居住劣势 X1、个体属性 X2 与健康间的中介作用</Title>
-                            <MetaData>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                            </MetaData>
                             <TextSettings>
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="DDAF0E3C-6D8B-4155-A7CA-3C6147C4B2FD" Type="Text" Created="2021-03-22 06:12:48 +0800" Modified="2021-03-22 06:12:58 +0800">
                             <Title>对健康影响的性别差异</Title>
-                            <MetaData>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                            </MetaData>
                             <TextSettings>
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
@@ -561,9 +575,6 @@
                 </BinderItem>
                 <BinderItem UUID="9881FBF7-5043-4D01-850D-A46FED5A555C" Type="Folder" Created="2022-09-05 11:25:34 +0800" Modified="2022-09-05 11:25:36 +0800">
                     <Title>结论</Title>
-                    <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                    </MetaData>
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
@@ -712,7 +723,7 @@
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>1089,0</TextSelection>
+                        <TextSelection>650,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="19BEE850-C255-43AE-AA55-969394F2328C" Type="Text" Created="2022-09-10 02:44:54 +0800" Modified="2022-09-24 01:40:47 +0800">
@@ -722,6 +733,15 @@
                     </MetaData>
                     <TextSettings>
                         <TextSelection>223,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="88A3D282-054B-4F0F-89D8-71E5927FCC13" Type="Text" Created="2022-10-09 14:35:17 +0800" Modified="2022-10-09 14:36:20 +0800">
+                    <Title>NACC</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>444,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -796,12 +816,12 @@
                 </CorkboardSettings>
             </CorkboardAndOutliner>
             <Children>
-                <BinderItem UUID="EC02A8D9-4726-4633-80DD-A264084D0F0D" Type="Text" Created="2022-09-05 11:26:09 +0800" Modified="2022-09-05 11:26:09 +0800">
+                <BinderItem UUID="EC02A8D9-4726-4633-80DD-A264084D0F0D" Type="Text" Created="2022-09-05 11:26:09 +0800" Modified="2022-10-13 22:36:18 +0800">
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>0,0</TextSelection>
+                        <TextSelection>1315,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="0E804D2D-A3E2-40DD-856B-3E889E57F710" Type="Text" Created="2007-03-26 04:48:19 +0800" Modified="2022-09-05 11:27:09 +0800">
@@ -827,6 +847,15 @@
                     </MetaData>
                     <TextSettings>
                         <TextSelection>99,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="79C3C909-997D-49B6-B191-A27FB259C947" Type="Text" Created="2022-10-08 19:40:27 +0800" Modified="2022-10-08 21:22:24 +0800">
+                    <Title>1.了解历史</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -897,12 +926,12 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Characters" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 20:24:39 +0800" IgnoreDeadline="Yes">15000</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2022-10-03 00:00:00 +0800" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">50</SessionTarget>
-        <PreviousSession Words="1026" Characters="2116" Date="2022-10-02 22:02:24 +0800"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2022-10-18 00:00:00 +0800" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">50</SessionTarget>
+        <PreviousSession Words="0" Characters="0" Date="2022-10-17 10:50:24 +0800"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-10-02 00:00:00 +0800">
-        <DraftWordCount>-53</DraftWordCount>
-        <DraftCharCount>-83</DraftCharCount>
+    <RecentWritingHistory Date="2022-10-17 00:00:00 +0800">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>0</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>

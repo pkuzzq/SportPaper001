@@ -63,5 +63,14 @@
     <Day dwc="1353" dcc="2811" dtwc="0" owc="0" occ="0" dtcc="0" s="50" st="w">2022-09-29</Day>
     <Day dwc="39" dcc="80" dtwc="0" owc="0" occ="0" dtcc="0" s="50" st="w">2022-09-30</Day>
     <Day dwc="382" dcc="1023" owc="-365" occ="-682" s="50" st="w">2022-10-01</Day>
-    <Day dwc="-53" dcc="-83" owc="0" occ="0" s="50" st="w">2022-10-02</Day>
+    <Day dwc="-53" dcc="-83" dtwc="0" owc="0" occ="0" dtcc="0" s="50" st="w">2022-10-02</Day>
+    <Day dwc="301" dcc="670" dtwc="5689" owc="0" occ="0" dtcc="13640" s="50" st="w">2022-10-04</Day>
+    <Day dwc="725" dcc="1676" dtwc="0" owc="0" occ="0" dtcc="0" s="50" st="w">2022-10-05</Day>
+    <Day dwc="144" dcc="282" dtwc="0" owc="0" occ="0" dtcc="0" s="50" st="w">2022-10-06</Day>
+    <Day dwc="-65" dcc="-127" owc="0" occ="0" s="50" st="w">2022-10-07</Day>
+    <Day dwc="478" dcc="1105" dtwc="0" owc="0" occ="0" dtcc="0" s="50" st="w">2022-10-08</Day>
+    <Day dwc="14" dcc="52" dtwc="5689" owc="392" occ="973" dtcc="13640" s="50" st="w">2022-10-09</Day>
+    <Day dwc="813" dcc="1764" owc="0" occ="0" s="50" st="w">2022-10-10</Day>
+    <Day dwc="0" dcc="-7" owc="0" occ="0" s="50" st="w">2022-10-11</Day>
+    <Day dwc="0" dcc="0" owc="2890" occ="17370" s="50" st="w">2022-10-13</Day>
 </WritingHistory>
